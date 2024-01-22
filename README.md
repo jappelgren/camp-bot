@@ -19,3 +19,5 @@ A Puppeteer bot made for a friend to snipe camping spot reservartions on [recrea
    ```
    - The application will run at an interval set by the `CRON_EXPRESSION` environment variable.  If the bot succeeds in adding a campsite to your cart the window will stay open and you will have 15 minutes to complete the transaction.  If there are no sites available it will shut the browser window and try again when your cron expression tells it to.
    - If you book a site make sure to shut down the app so it doesn't try to keep adding sites to your cart.
+
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
