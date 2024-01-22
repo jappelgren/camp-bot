@@ -100,7 +100,8 @@ const reserveCampSite = () => {
     }
 
     await browser.disconnect();
-    console.log('If this site works for you make sure to end application after checking out to avoid adding additional campsites to your cart tomorrow.');
+    console.log('If this site works for you make sure to stop the application AFTER checking out to avoid adding additional campsites to your cart tomorrow.');
+    console.log('Stopping the application before you checkout will close the browser. But the site should still be in your cart if you reopen the page in a regular browser.')
   })();
 }
 
