@@ -7,7 +7,7 @@ A Puppeteer bot made for a friend to snipe camping spot reservartions on [recrea
    npm install
    ``` 
 3. Create .env file at root level of project.  Add the following variables. 
-   - `CAMP_SITE_ID` - The id of the camp site you are trying to reserve. 
+   - `CAMP_GROUND_ID` - The id of the camp grounds you are trying to reserve. 
    - `USER_NAME` - Your username you used to sign up for recreation.gov.  Most likely an email address. 
    - `PASSWORD` - Password for your account.
    - `CHECK_IN_DATE` - mm/dd/yyy ex. `'05/15/2024'` 

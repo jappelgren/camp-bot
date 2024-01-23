@@ -7,7 +7,7 @@ const cronExpression = process.env.CRON_EXPRESSION;
 const timeZone = process.env.TIME_ZONE;
 
 const reserveCampSite = () => {
-  const campSiteId = process.env.CAMP_SITE_ID;
+  const campGroundId = process.env.CAMP_GROUND_ID;
   const userName = process.env.USER_NAME;
   const pwd = process.env.PASSWORD;
   const checkInDate = process.env.CHECK_IN_DATE;
@@ -19,7 +19,7 @@ const reserveCampSite = () => {
     const incognito = await browser.createIncognitoBrowserContext();
     const page = await incognito.newPage();
     page.setViewport({ height: 1080, width: 1920 })
-    await page.goto(`https://www.recreation.gov/camping/campgrounds/${campSiteId}`);
+    await page.goto(`https://www.recreation.gov/camping/campgrounds/${campGroundId}`);
 
     // Login
     const loginBtn = '#ga-global-nav-log-in-link';
