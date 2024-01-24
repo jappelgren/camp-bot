@@ -119,7 +119,7 @@ const subtractMinuteFromCron = (cronExpression) => {
   } else {
     splitExpression[0] = +splitExpression[0] - 1
   }
-  return `${splitExpression[0]} ${splitExpression[1]} ${splitExpression[2]} ${splitExpression[3]} ${splitExpression[4]}`
+  return splitExpression.join(' ');
 }
 
 schedule.scheduleJob('openBrowser', subtractMinuteFromCron(cronExpression), createBrowser);
